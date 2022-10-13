@@ -1,0 +1,45 @@
+
+.qqq{
+	color: red;
+}
+.btn{
+	width: 100px;
+	border: none;
+	opacity: 0.7;
+}
+.bgi{
+	background-color: #fff;
+	font-family: SimSun;
+	background-image: url(https://img1.baidu.com/it/u=1111504032,3793788730&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500);
+	background-size: contain;
+	font-weight: 550;
+}
+.header {
+	display: -webkit-flex; /*标示使用flexbox弹性盒子 */
+	color: #fff;
+	text-align: center;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+}
+.category-item {
+	flex: 1;
+	background-color: skyblue;
+	border: 1px solid #fff;
+	border-radius: 50px;
+	margin: 1px;
+}
+.show {
+	display: block;
+}
+.hidle {
+	display: none;
+}
+.line {
+	height: 260px;
+}
+image {
+	height: 150px;
+}
+

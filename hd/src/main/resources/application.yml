@@ -1,0 +1,40 @@
+server:
+    port: 8081
+    servlet:
+        context-path: /shixunyi
+
+spring:
+    application:
+        name: shixunyi
+    datasource:
+        type: com.zaxxer.hikari.HikariDataSource
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        name: defaultDataSource
+        url: jdbc:mysql://localhost:3306/vared?serverTimezone=UTC
+        username: root
+        password: 123456
+        hikari:
+            minimum-idle: 5   # 最小空闲连接数量
+            idle-timeout: 180000   #  空闲连接存活最大时间，默认600000（10分钟）
+            maximum-pool-size: 20 # 连接池最大连接数，默认是10
+            auto-commit: true # 控制从池返回的链接的默认自动提交行为，默认值：true
+            pool-name: MyHikariCP
+            max-lifetime: 1800000 # 控制池中链接的最长生命周期，值0表示无限生命周期，默认1800000，即30分钟
+            connection-timeout: 30000 # 数据库链接超时时间，默认30秒，即30000
+
+mybatis:
+    mapper-locations: classpath:mappers/*xml
+    type-aliases-package: com.gcxy.jk.shixunyi.entity
+    configuration:
+        default-enum-type-handler: org.apache.ibatis.type.EnumTypeHandler
+        log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+pagehelper:
+    helperDialect: mysql
+    reasonable: false
+    supportMethodsArguments: true
+    params: count=countSql
+
+wxMini:
+    appId: wx8f34590d560783b1  #小程序的appid
+    secret: 62a804ae6fb1347e56b227d178b92a9c  #小程序密匙

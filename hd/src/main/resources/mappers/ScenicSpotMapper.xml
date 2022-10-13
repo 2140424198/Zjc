@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gcxy.jk.shixunyi.dao.ScenicSpotMapper">
+  <resultMap id="BaseResultMap" type="com.gcxy.jk.shixunyi.entity.ScenicSpot">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="scenic_name" jdbcType="VARCHAR" property="scenicName" />
+    <result column="scenic_address" jdbcType="VARCHAR" property="scenicAddress" />
+    <result column="scenic_describe" jdbcType="VARCHAR" property="scenicDescribe" />
+    <result column="scenic_image" jdbcType="VARCHAR" property="scenicImage" />
+    <result column="longitude" jdbcType="DECIMAL" property="longitude" />
+    <result column="latitude" jdbcType="DECIMAL" property="latitude" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, scenic_name, scenic_address, scenic_describe, scenic_image, longitude, latitude
+  </sql>
+</mapper>

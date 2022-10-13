@@ -1,0 +1,53 @@
+
+.bgi{
+	background: linear-gradient(to right, rgb(247, 209, 215), rgb(191, 227, 241));
+	font-family: 'SimSun';
+}
+.datou{
+	margin: 10px;
+	font-weight: 700;
+}
+.add{
+	margin: 10px;
+}
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.logo {
+	height: 200rpx;
+	width: 200rpx;
+	margin-top: 200rpx;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50rpx;
+}
+.text-area {
+	display: flex;
+	justify-content: center;
+}
+.title {
+	font-size: 36rpx;
+	color: groy;
+}
+.img image {
+	margin: auto;
+	display: block;
+}
+.search {
+	display: flex;
+}
+.uni-input{
+	margin: 10px;
+	box-sizing: border-box;
+	padding-left: 10px;
+	border: 1px solid #fdffdd;
+	border-radius: 50px;
+	color: black;
+}
+.icon{
+	margin: 10px 10px;
+}
+
